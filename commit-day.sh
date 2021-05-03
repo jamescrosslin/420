@@ -8,7 +8,7 @@ for (( D=$3; D<=$4; D++))
 do
   mkdir $D
   cd $D
-  n=$((RANDOM%7+10))
+  n=$((RANDOM%7+1))
   for ((i=1; i<$n; i++))
   do
     echo "$i on $2/$D/$1" > commit.md
